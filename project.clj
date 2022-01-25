@@ -39,7 +39,7 @@
                              [lein-codox "0.10.7"]
                              [lein-cloverage "1.2.2"]
                              [lein-ancient "0.7.0"]
-                             [jonase/eastwood "1.0.0"]]
+                             [jonase/eastwood "1.2.2"]]
                    :eastwood {:add-linters [:boxed-math
                                             :performance]}
                    :dependencies [[clj-kondo "2022.01.13"]

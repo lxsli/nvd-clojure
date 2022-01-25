@@ -164,6 +164,10 @@ wiki.
 
 There are some specific settings below which are worthy of a few comments:
 
+* `:use-jvm-preset?` default unset
+  - If true, only dependencies relevant to JVM dependencies will be analyzed. This improves performance and accuracy, at the cost of assuming that only JVM dependencies are in fact being analyzed (as opposed to those belonging to other ecosystems: .NET, Ruby, Node.js...)
+  - If false, dependencies from other ecosystems will also be analyzed. This used to be the default behavior.
+  - If unset, falls backs to true, but logging a warning.
 * `:fail-threshold` default value `0`; checks the highest CVSS score across all dependencies, and fails if this threshold is breached.
   - As CVSS score ranges from `0..10`, the default value will cause a build to fail even for the lowest rated
   vulnerability.

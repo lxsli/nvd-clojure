@@ -1,3 +1,9 @@
+## Changes from 2.2.0 to 3.0.0
+
+* [#123](https://github.com/rm-hull/nvd-clojure/issues/123): Default to only analyzing dependencies/artifactrs that are relevant to JVM projects
+  * i.e. the internal analzers that are specialized in other ecosystems e.g. .NET, Ruby, Node.js, etc will not be run at all, improving performance and accuracy.
+  * ([Read more](https://github.com/rm-hull/nvd-clojure/tree/v3.0.0#configuration-options))
+
 ## Changes from 2.1.0 to 2.2.0
 
 * Update `dependency-check-core`.
