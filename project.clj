@@ -1,4 +1,4 @@
-(defproject nvd-clojure "2.2.0"
+(defproject org.clojars.lxsli/nvd-clojure "2.2.0-SNAPSHOT"
   :description "National Vulnerability Database dependency checker"
   :url "https://github.com/rm-hull/nvd-clojure"
   :license {:name "The MIT License (MIT)"
@@ -49,6 +49,6 @@
              :skip-self-check {:jvm-opts ["-Dnvd-clojure.internal.skip-self-check=true"
                                           "-Dclojure.main.report=stderr"]}}
   :deploy-repositories [["clojars" {:url "https://clojars.org/repo"
-                                    :username :env/clojars_username
-                                    :password :env/clojars_password
+                                    ; :username :env/clojars_username
+                                    ; :password :env/clojars_password
                                     :sign-releases false}]])
